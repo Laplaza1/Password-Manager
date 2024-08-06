@@ -3,7 +3,7 @@ from random import *
 
 
 
-img = "c:/Users/L1K3A/OneDrive/Desktop/TheBIBBLE_Test1.png"
+img = "TheBIBBLE_Test1.png"
 def image_pass_encode(image:str,password:str):
     with open(image,"rb") as photo:
         data = photo.read()
@@ -35,7 +35,7 @@ def clear_old_pass(image:str):
 
 def Password_generator():
     special_char = ["?", "!" ,"@" ,"#" ,"$" ,"%" ,"&"]
-    with open("c:/Users/L1K3A/OneDrive/Desktop/Random speech.txt","r") as file1:
+    with open("Random speech.txt","r") as file1:
         test_word = file1.read()
         test_word= test_word.replace(",","").split()
         pass_word_frag=(test_word[randint(a=0,b=282)])
