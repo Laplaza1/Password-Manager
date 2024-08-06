@@ -22,9 +22,6 @@ def copy_var():
 
 
 def set_password():
-    root2 = tkinter.Tk()
-    root2.title("Set your password")
-    root2.geometry("200x200")
     entry_txt = tkinter.StringVar()
     label1 =tkinter.Label(root,text="Password:").pack(padx=7,pady=3)
     entry1 = tkinter.Entry(root,textvariable=entry_txt)
